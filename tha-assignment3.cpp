@@ -1,5 +1,6 @@
 // Thao Ha IN200 C++
 // Chapter 3
+// https://github.com/thaotha/Adventure1/blob/master/tha-assignment3.cpp
 
 #include <iostream>
 #include <stdlib.h>
@@ -17,11 +18,20 @@ int main() {
     string inventory[MAX_ITEMS] = {"Tetris", "Empire", "Half-Life 2", "Contra"};
     int numItems = 4;
     char input = 'y';
+    int randomNum;
+
+    // "Random game of the day" at the start that asks the player if they've played a randomly chosen game from the array.
+    randomNum = rand() % numItems;
+    cout << "Hello, Do you want to choose a random game in the current list of video games? (y/n): ";
+    cin >> input;
+    if (input == 'y') {
+        cout << "The random game of today is " + inventory[randomNum] + ".\n";
+    }
 
     // 2. Create a for loop that will iterate through the list and look for the game "Half-Life 2"
     for (int i = 0; i < numItems; i++) {
         if (inventory[i].compare("Half-Life 2")) {
-            cout << "There is the game \"Half-Life 2\" in this current list.\n";
+            cout << "\nThere is the game \"Half-Life 2\" in this current list.\n";
             break;
         }
             
