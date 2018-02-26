@@ -1,5 +1,6 @@
 // Thao Ha IN200 C++
 // Chapter 5
+// https://github.com/thaotha/Adventure1/blob/master/tha-assignment5.cpp
 
 #include <iostream>
 #include <stdlib.h>
