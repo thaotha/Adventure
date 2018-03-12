@@ -1,6 +1,6 @@
 // Thao Ha IN200 C++
 // Mid-term Exam - Code Creation
-//
+// https://github.com/thaotha/Adventure1/blob/master/tha-midterm.cpp
 
 #include <iostream>
 #include <stdlib.h>
