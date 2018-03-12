@@ -41,7 +41,7 @@ int main() {
     }
     while (health > 0 && health < 4);
 
-    this_thread::sleep_for(chrono::microseconds(25));
+    //this_thread::sleep_for(chrono::microseconds(25));
 
     if (health > 0) {
         cout << "Congratulations!!!\n";
